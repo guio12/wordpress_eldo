@@ -1,0 +1,29 @@
+// Sticky footer
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: $bleu-eldo;
+}
+
+.back-to-top {
+    color:black;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.back-to-top:focus {
+    background-color: white;
+}
+
+.back-to-top:hover {
+    background-color: $bleu-eldo;
+    color: white;
+}
