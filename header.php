@@ -49,20 +49,21 @@
 </div>
 
 <header id="masthead" class="site-header">
-  <nav class="navbar navbar-expand-md fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div id="logo" class="mr-auto border-eldo">
       <span><a class="navbar-brand js-scrollTo" href="http://localhost/wordpress">
         <?php bloginfo('name'); ?>
       </a></span>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-controls="slide-collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="burger fas fa-bars fa-3x"></i>
     </button>
     <?php
       wp_nav_menu([
         'menu'            => 'menu_eldo', 
         'theme_location'  => 'primary-menu',
         'container'       => 'div',
-        'container_id'    => 'navbarCollapse',
+        'container_id'    => 'slide-navbar-collapse',
         'container_class' => 'collapse navbar-collapse',
         'menu_id'         => false,
         'menu_class'      => 'navbar-nav ml-auto mx-auto',
@@ -72,7 +73,8 @@
       ]);
     ?>
   </nav>
-    
+  <div class="menu-overlay"></div>
+
   <div class="container partie-image">
     <div class="row">
       <div class="col-md-4">

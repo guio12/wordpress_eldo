@@ -3,9 +3,10 @@ import 'bootstrap';
 
 // Fichiers .js
 import './smooth';
-import './toTop';
+import './to-top';
 import './loader';
 import './scroll-active';
+import './menu-mobile';
 
 // Font-awesome
 import '@fortawesome/fontawesome-free/js/fontawesome';

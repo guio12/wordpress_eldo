@@ -18,7 +18,14 @@
     text-transform: none;
 }
 
+.navbar-toggler {
+  color: $bleu-eldo;
+}
 
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
 
 .nav-link img {
     
@@ -172,3 +179,4 @@
       transform: translateX(-3px);
   }
 }
+
