@@ -35,7 +35,7 @@
 
 </head>
 
-<body 
+<body data-spy="scroll" data-target="#scroll-spy" data-offset="0"
 	<?php body_class(); 
 	// This will display a class specific to whatever is being loaded by Wordpress
 	// i.e. on a home page, it will return [class="home"]
@@ -48,11 +48,11 @@
   <i class="fas fa-spinner fa-spin fa-10x"></i>
 </div>
 
-<header id="masthead" class="site-header">
-  <nav class="navbar navbar-expand-lg fixed-top">
+<header id="masthead" class="container-fluid site-header">
+  <nav id="scroll-spy" class="navbar navbar-expand-lg fixed-top">
     <div id="logo" class="mr-auto border-eldo">
       <span><a class="navbar-brand js-scrollTo" href="http://localhost/wordpress">
-        <?php bloginfo('name'); ?>
+        <h1><?php bloginfo('name'); ?></h1>
       </a></span>
     </div>
     <button class="navbar-toggler collapsed" type="button" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-controls="slide-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,26 +66,33 @@
         'container_id'    => 'slide-navbar-collapse',
         'container_class' => 'collapse navbar-collapse',
         'menu_id'         => false,
-        'menu_class'      => 'navbar-nav ml-auto mx-auto',
+        'menu_class'      => 'navbar-nav ml-auto menu-hover',
         'depth'           => 0,
         'fallback_cb'     => 'WP_Bootstrap_navwalker::fallback',
-        'walker'          => new WP_Bootstrap_navwalker()
+        'walker'          => new WP_Bootstrap_navwalker(),
       ]);
     ?>
   </nav>
   <div class="menu-overlay"></div>
 
   <div class="container partie-image">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="image-header">
-          <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="img-eldo" class="rounded-circle">
+    <div class="row mx-auto">
+      <div class="col-lg-5 ">
+        <div class="image-header text-center">
+          <img src="http://lorempixel.com/output/people-q-c-300-300-1.jpg" alt="img-eldo" class="rounded-circle">
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-7">
         <div class="text-header text-center">
-          <p>fpjzpfjqzofjfpjqfoqjfosjfosfjoqfjqodfji</p>
+          <h2>Éléonore Lovillo</h2>
+          <p>Traductrice indépendante</p>
+          <p>Anglais -> Français</p>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center to-section">
+          <a href="#prestations"><i class="fas fa-angle-down fa-5x js-scrollTo"></i></a>
       </div>
     </div>
   </div>

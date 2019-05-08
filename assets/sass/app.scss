@@ -1,5 +1,4 @@
 // Bootstrap
-
 @import '~bootstrap/scss/bootstrap';
 
 
@@ -14,6 +13,11 @@
 @import '/styles/parcours.scss';
 @import '/styles/prestations.scss';
 @import '/styles/contact.scss';
+
+
+// A VIRER, MIEUX GERER LES POLICES
+@import url('https://fonts.googleapis.com/css?family=Raleway|Oxygen|Josefin+Sans');
+
 
 
 

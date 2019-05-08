@@ -1,4 +1,10 @@
 section#specialisations {
-    background-color: green;
+    background-color: $gris-fonce-eldo;
     height: 90vh;
+}
+.specialisations-title {
+    padding-top: 5vh;
+}
+.specialisations-content {
+    padding-top: 10vh;
 }

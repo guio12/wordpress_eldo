@@ -1,4 +1,5 @@
 section#parcours {
-    background-color: red;
+    background-color: $gris-clair-eldo;
     height: 90vh;
+    @include font-size(1.2rem);
 }

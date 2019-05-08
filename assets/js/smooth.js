@@ -2,7 +2,7 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-var nav = $('.navbar'); // update to your nav class
+var nav = $('.navbar');
 
 $(document).on('click', 'a[href^="#"]', function (event) {
     var NavHeight = nav.height();
@@ -10,5 +10,5 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - NavHeight - 10
-    }, 500);
+    }, 300)
 });

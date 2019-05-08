@@ -4,6 +4,21 @@
 
 
 
+@include media-breakpoint-only(lg) {
+
+    .border-eldo {
+        display: none;
+    }
+    .site-header .navbar {
+        margin: auto;
+    }
+    .navbar-nav li a {
+        margin: 5px;
+        letter-spacing: 2px;
+    }
+  }
+
+
 @include media-breakpoint-down(md) {
     
     #slide-navbar-collapse {
@@ -15,6 +30,7 @@
         height: 100%;
         background-color: $bleu-eldo;
         overflow: auto;
+        padding-top: 10vh;
       }
       .menu-overlay {
         display: none;
@@ -29,9 +45,18 @@
         top: 0;
         z-index: 49;
       }
-      .navbar ul a {
+      .navbar ul a, .navbar ul a:hover {
           color: white;
       }
+
+      .site-header .partie-image {
+        padding-top: 20vh;
+
+        .to-section {
+          padding-top: 5vh;
+        }
+    }
+
   }
 
   
